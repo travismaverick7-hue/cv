@@ -263,11 +263,9 @@
     const messageContainer = document.getElementById('messageContainer');
     const messageBox = document.getElementById('messageBox');
 
-    if (serviceSelect.value === "CCTV/Other") {
-        // Show the box with a smooth fade-in effect if you want, 
-        // or just simple display: block
+    if (serviceSelect.value === "CCTV/Other") {
         messageContainer.style.display = "block";
-        messageBox.setAttribute('required', 'true'); // Make it mandatory only when visible
+        messageBox.setAttribute('required', 'true'); 
     } else {
         messageContainer.style.display = "none";
         messageBox.removeAttribute('required'); // Not required for standard services
@@ -279,8 +277,8 @@
 <script>
   AOS.init({
     duration: 1000,
-    once: false,      // This allows animations to repeat every time you scroll
-    mirror: true,     // This ensures elements animate out while scrolling past them
+    once: false,     
+    mirror: true,     
   });
 </script>
 </body>
